@@ -1,14 +1,20 @@
 /*Mise en place du menu*/
+
+body {
+	margin:0;
+}
+
 header nav ul {
     list-style-type: none;
     margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-color: #EDDEA7;
-	position: fixed;
     top: 0;
     width: 100%;
     border: 2px solid #78643A;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 header nav li {
@@ -24,19 +30,20 @@ header nav li a {
 }
 
 header nav li a:hover {
-    background-color: #439AA1;
+    background-color: #88CCD2;
 }
 
 .active {
     background-color: #4CAF50;
 }
 
-/*Style dy background*/
+/*Style du background*/
 .background {
 	height:600px;
 	background: url("/Users/Quentin/GitHub/Ukulele/images/musicien-ukulele.jpg") no-repeat center center;
  	background-size: cover;
  	opacity: 0.75;
+ 	margin-top:-25px;
 
 }
 
@@ -44,22 +51,40 @@ header nav li a:hover {
 h1 {
 	padding-top: 140px;
 	padding-left: 750px;
+	font-size: 33px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .CTA {
 	background-color: #439AA1;
 	border: 1px solid #78643A;
-	border-radius: 32px;
-	margin-top: 200px;
-	margin-left: 700px;
+	border-radius: 15px;
 	padding: 10px;
 	text-align: center;
+	display: inline;
+	float: right;
+	margin-right: 180px;
+	margin-top: 198px;
+	font-size: 22px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {	text-decoration: none;
+	color: black;
 }
 
 
 /*2e slide*/
-body section {
+.background-2 {
 	background-color: #EDDEA7;
+	margin: 0 auto;
+}
+
+
+.iframe, .morceau-jour {
+	width: 600px;
+	display: inline-block;
+	vertical-align: top;
 }
 
 iframe {
@@ -69,5 +94,50 @@ iframe {
 }
 
 .morceau-jour {
-	float: right;
+	margin-left: 100px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	font-family: 'Open Sans', sans-serif;
+
 }
+
+.morceau-jour a:hover {
+	color:#78643A;
+}
+
+/*footer
+
+.box {
+  width: 150px;
+  height: 150px;
+  background: red;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.box:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+.hidden-box {
+  display: none;
+  background-color: black;
+  opacity: 0.8;
+  height: 100%;
+}
+.parent {
+  background-color: yellow;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+.parent:hover .hidden-box {
+  display: block;
+}
+*/
