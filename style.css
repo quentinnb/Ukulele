@@ -1,16 +1,21 @@
-ul {
+/*Mise en place du menu*/
+header nav ul {
     list-style-type: none;
     margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-color: #EDDEA7;
+	position: fixed;
+    top: 0;
+    width: 100%;
+    border: 2px solid #78643A;
 }
 
-li {
+header nav li {
     float: left;
 }
 
-li a {
+header nav li a {
     display: block;
     color: black;
     text-align: center;
@@ -18,10 +23,51 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #78643A;
+header nav li a:hover {
+    background-color: #439AA1;
 }
 
 .active {
     background-color: #4CAF50;
+}
+
+/*Style dy background*/
+.background {
+	height:600px;
+	background: url("/Users/Quentin/GitHub/Ukulele/images/musicien-ukulele.jpg") no-repeat center center;
+ 	background-size: cover;
+ 	opacity: 0.75;
+
+}
+
+/*Placement du H1*/
+h1 {
+	padding-top: 140px;
+	padding-left: 750px;
+}
+
+.CTA {
+	background-color: #439AA1;
+	border: 1px solid #78643A;
+	border-radius: 32px;
+	margin-top: 200px;
+	margin-left: 700px;
+	padding: 10px;
+	text-align: center;
+}
+
+
+/*2e slide*/
+body section {
+	background-color: #EDDEA7;
+}
+
+iframe {
+	margin-left: 100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.morceau-jour {
+	float: right;
 }
