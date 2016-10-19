@@ -2,7 +2,11 @@
 
 body {
 	margin:0;
+	font-family:'Open Sans', sans-serif;;
 }
+
+
+/*
 
 header nav ul {
     list-style-type: none;
@@ -35,67 +39,69 @@ header nav li a:hover {
 
 .active {
     background-color: #4CAF50;
-}
+}*/
 
-/*Style du background*/
+/*Style du background
 .background {
 	height:600px;
 	background: url("/Users/Quentin/GitHub/Ukulele/images/musicien-ukulele.png") no-repeat center center;
- 	background-size: cover;
- 	/*opacity: 0.75;*/
- 	margin-top:-25px;
-
+ 	background-size: cover; 	
 }
+
+.backgroundtest {
+	background: url("/Users/Quentin/GitHub/Ukulele/images/musicien-ukulele.png") no-repeat center center;
+	background-size:100% auto;
+
+}*/
 
 /*Placement du H1*/
 h1 {
-	padding-top: 140px;
-	padding-left: 750px;
+	/*padding-top: 140px;
+	padding-left: 750px;*/
 	font-size: 33px;
 	font-family: 'Open Sans', sans-serif;
 }
 
-.CTA {
+/*.CTA {
 	background-color: #439AA1;
 	border: 1px solid #78643A;
 	border-radius: 15px;
 	padding: 10px;
 	text-align: center;
-	display: inline;
-	float: right;
-	margin-right: 180px;
-	margin-top: 198px;
-	font-size: 22px;
-	font-family: 'Open Sans', sans-serif;
+	/*display: inline;*/
+	/*float: right;*/
+	/*margin-right: 180px;
+	margin-top: 198px;*/
+	/*font-size: 22px;
+	font-family: 'Open Sans', sans-serif;*/
 }
 
-.CTA:hover {
+/*.CTA:hover {
 	background-color: #88CCD2;
 }
 
 a {	text-decoration: none;
 	color: black;
-}
+}*/
 
 
 /*2e slide*/
-.background-2 {
+/*.background-2 {
 	background-color: #EDDEA7;
-	margin: 0 auto;
+	margin: 0 auto;*/
 }
 
 
-.iframe, .morceau-jour {
+/*.iframe, .morceau-jour {
 	width: 600px;
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: top;*/
 }
 
-iframe {
-	margin-left: 100px;
+/*iframe {
 	margin-top: 50px;
 	margin-bottom: 50px;
-}
+}*/
 
 .morceau-jour {
 	margin-left: 100px;
@@ -108,6 +114,59 @@ iframe {
 .morceau-jour a:hover {
 	color:#78643A;
 }
+
+
+
+/*2e html*/
+
+#section1 {
+	background: url("/Users/Quentin/GitHub/Ukulele/images/musicien-ukulele.png") no-repeat center ;
+	background-size: cover;
+	padding:15% 0 15% 0;
+	width:100%;
+	margin:0;
+
+}
+
+#section2 {
+	background-color: #EDDEA7;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-right: 150px;
+}
+
+.navbar {
+	margin-bottom: 0px;
+	background-color:#EDDEA7;
+}
+
+.btn {
+	padding: 12px 12px;
+	font-size: 18px;
+}
+
+.btn-primary {
+	background-color: #439AA1;
+	border-radius: 15px;
+}
+
+.btn-primary:hover {
+	background-color: #88CCD2;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.taille-p {
+	font-size:18px;
+}
+
+.taille-p2 {
+	font-size:16px;
+}
+
 
 /*Formulaire de contact
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);

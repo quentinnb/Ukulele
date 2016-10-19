@@ -8,7 +8,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
 	<link type="text/css" rel="stylesheet" href="style.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	
 	
@@ -16,6 +19,8 @@
 </head>
 
 <body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 	
 	<header>
@@ -23,7 +28,7 @@
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="#Morceau-day">Je cherche l'inspiration</a></li>
+				<li><a href="#morceau-day">Je cherche l'inspiration</a></li>
 				<li><a href="#">Proposer ma vidéo</a></li>
 			</ul>
 		</nav>
@@ -32,23 +37,45 @@
 
 
 
-	<div class="background">
-		<h1>Un nouveau morceau de ukulele.
-		<br>Chaque jour.</h1>
+	
+	<div class="container">
+		<div class="row">
+			<div class="backgroundtest">
+				
+				<div class="col-md-1 col-md-offset-7"
+					<h1>Un nouveau morceau de ukulele.
+					<br>Chaque jour.</h1>
+				</div>
 
-			
-		<a href="#Morceau-day" class="CTA">Découvrir mon morceau du jour</a>
-			
+			</div>
 
+			<div class="row">
+
+				<div class="col-md-4 cold-md-offset-1">
+					<a href="#Morceau-day" class="CTA">Découvrir mon morceau du jour</a>
+				</div>
+			
+			</div>
+		</div>
 	</div>
+
+			
+
 		
 	<section class="background-2">
 		
 		
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/HQ8Avkxv3-4" frameborder="0" allowfullscreen></iframe>
+		<div class="container">
+			
+			<div class="row">
+			<!-- width="560" height="315" --> 
+				
+				<div class="col-md-5">
+					<iframe src="https://www.youtube.com/embed/HQ8Avkxv3-4" frameborder="0" allowfullscreen></iframe>
+				</div>
 
-		
-		<div class="morceau-jour">
+				
+				<div class="col-md-5 morceau-jour">
 					<h2 id="Morceau-day">Mon morceau du jour</h2>
 						
 						<p>
@@ -59,13 +86,15 @@
 						<p>Niveau : confirmé</p>
 						<p>Vous souhaitez l'apprendre ? C'est par ici :</p>
 
-							<ul>
-								<li><a href="http://www.ukulele-tabs.com/fr/tablatures/bobby-mcferrin/dont-worry-be-happy-uke-tab-18613.html" target="_blank">Les accords</a></li>
+						<ul>
+							<li><a href="http://www.ukulele-tabs.com/fr/tablatures/bobby-mcferrin/dont-worry-be-happy-uke-tab-18613.html" target="_blank">Les accords</a></li>
 								
-								<li><a href="https://www.youtube.com/watch?v=4sQBqFp5uFo" target="_blank">Le tutoriel</a></li>
-							</ul>
+							<li><a href="https://www.youtube.com/watch?v=4sQBqFp5uFo" target="_blank">Le tutoriel</a></li>
+						</ul>
+
+				</div>
+			</div>
 		</div>
-		
 	</section>
 		
 		
