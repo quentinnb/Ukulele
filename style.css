@@ -146,12 +146,17 @@ h1 {
 }
 
 .btn {
+	
+    
+
+}
+
+.btn-CTA {
 	padding: 12px 12px;
 	font-size: 18px;
     white-space: normal;
-    border-radius: 15px;
+	border-radius: 15px;
     background-color: #439AA1;
-
 }
 
 .btn:hover {
@@ -178,6 +183,8 @@ h1 {
 	font-size:16px;
 }
 
+
+
 /*Mise en place du carousel*/
 
 .carousel-inner > .item > img,
@@ -192,9 +199,23 @@ h1 {
   	padding-bottom: 10px;
   }
 
+ /*Mise en place du footer*/
+
   footer {
   	background-color:#928F7C;
   }
+
+ .margin-footer {
+ 	margin:auto;
+ }
+
+ .btn-footer {
+ 	margin:15px 10px 10px 20px;
+ 	background-color:#EDDEA7;
+ 	border-radius: 10px;
+
+ }
+
 
 
 

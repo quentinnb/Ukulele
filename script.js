@@ -21,8 +21,6 @@ $("#video-artist").html(videoOptions.artist);
 $("#video-level").html(videoOptions.level);
 
 
-
-
 });
 
 
