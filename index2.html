@@ -18,13 +18,20 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
 
 
 	<link type="text/css" rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link rel="icon" href="/Users/Quentin/GitHub/Ukulele/images/favicon.ico" />
 	
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="images/favicon-32.png" type="image/png">
+	<link rel="icon" sizes="64x64" href="images/favicon-64.png" type="image/png">
+	<link rel="icon" sizes="96x96" href="images/favicon-96.png" type="image/png">	
 </head>
 
 <body>
@@ -47,14 +54,14 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      		<ul class="nav navbar-nav">
 			        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-			        <li><a href="#">Principe</a></li>
+			        <li data-toggle="modal" data-target="#myModal"><a href="#">Principe</a></li>
 			        <li><a href="#morceau-day">Je cherche l'inspiration</a></li>
 	    		</ul>
 	      	
 	      		      
 	      		<ul class="nav navbar-nav navbar-right">
-		        	<li><a href="https://www.facebook.com" target="blank"><img src="/Users/Quentin/GitHub/Ukulele/images/facebook.ico"></a></li>
-		        	<li><a href="https://www.twitter.com" target="blank"><img src="/Users/Quentin/GitHub/Ukulele/images/twitter.ico"></a></li>
+		        	<li><a href="https://www.facebook.com" target="blank"><img src="images/facebook.ico"></a></li>
+		        	<li><a href="https://www.twitter.com" target="blank"><img src="images/twitter.ico"></a></li>
 	        	</ul>
 
 	       
@@ -75,43 +82,52 @@
 			</div>
 
 			<div class="row">
-				<div class="col-xs-6 col-xs-offset-5">
-					<button type="button" class="btn"><a href="#morceau-day">Découvrez votre chanson du jour</a></button>
-				</div>
+				<a href="#morceau-day">
+					<div class="col-xs-6 col-xs-offset-5">
+						<button type="button" class="btn">Découvrez votre chanson du jour</button>
+					</div>
+				</a>
 			</div>
+			
 		
 		</div>
 	</section>
 
 	
-	<!--Mise en place du 2nd slide-->
+<!--Mise en place du 2nd slide-->
 
 	<section id="section2">
 		<div class="container">
 			
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-7">
 
-					<div class="embed-responsive embed-responsive-16by9">
+					<div id="video" class="embed-responsive embed-responsive-16by9">
     					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HQ8Avkxv3-4"></iframe>
 					</div>
     			</div>
+
+    			
 					
 
-				<div style="margin:auto;" class="col-md-4 col-md-offset-8">
+				<div style="margin:auto;" class="col-md-4">
 					
 					<h2 id="morceau-day">A vous de jouer !</h2>
 					<p class="taille-p">
-						Don't worry, Be happy
-						<br>Bobby McFerrin
+						<span id="video-title"></span>
+						<br><span id="video-artist"></span>
 					</p>
 
-					<p class="taille-p2">Niveau : confirmé</p>
+					<p class="taille-p2">Niveau : 
+						<span id="video-level"></span>
+					</p>
+					
 					<p class="taille-p2">Vous souhaitez l'apprendre ? C'est par ici :</p>
 						<ul>
-							<li><a href="http://www.ukulele-tabs.com/fr/tablatures/bobby-mcferrin/dont-worry-be-happy-uke-tab-18613.html" target="_blank">Les accords</a></li>
+							<li><a id="chords-link" href="">Les accords</a></li>
 								
 							<li><a href="https://www.youtube.com/watch?v=4sQBqFp5uFo" target="_blank">Le tutoriel</a></li>
+							
 						</ul>
 					
 				</div>
@@ -121,18 +137,43 @@
 		</div>
 	</section>
 
+	<!-- Button trigger modal -->
+
+
+<!-- Modal displayed when a user clicks on the upper button -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  		<div class="modal-dialog">
+    		<div class="modal-content">
+      			<div class="modal-header">
+        			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        			<h2 class="modal-title" id="myModalLabel">Ukedom, votre solution pour toujours savoir quoi jouer !</h2>
+      			</div>
+      		<div class="modal-body">
+        		<img class="img-responsive" src="images/ukulele-modal.jpg"/>
+        		<p style="margin-top:10px;">L'un des cauchemars de ukulele : ne plus savoir quoi jouer. Autrement vouloir jouer un nouveau morceau sans trop savoir lequel.
+        		Ukedom vous proposer aléatoirement un morceau à chaque chargement de la page et les différents liens pour l'apprendre.</p>
+
+      		</div>
+      		<div class="modal-footer">
+        		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      		</div>
+    		</div>
+  		</div>
+	</div>
+
+
 	<!--Mise en place du carousel-->
 
-	<section id="section3">
+	<!--<section id="section3">
 		<div class="container">
 
 			<h2 class="w3-center">Slideshow</h2>
 
 				<div class="w3-content" style="max-width:800px;position:relative">
-				  <img class="mySlides" src="https://pixabay.com/static/uploads/photo/2016/07/31/18/21/ukulele-1559613_960_720.png" style="width:100%">
-				  <img class="mySlides" src="https://pixabay.com/static/uploads/photo/2015/10/15/18/44/music-989909_960_720.jpg" style="width:100%">
-				  <img class="mySlides" src="https://pixabay.com/static/uploads/photo/2016/07/31/18/23/ukulele-1559617_960_720.jpg" style="width:100%">
-				  <img class="mySlides" src="https://pixabay.com/static/uploads/photo/2015/06/19/00/10/ukulele-814279_960_720.jpg" style="width:100%">
+				  <img class="mySlides" src="images/ukulele-slide-1.png" style="width:100%">
+				  <img class="mySlides" src="images/ukulele-slide-2.jpg" style="width:100%">
+				  <img class="mySlides" src="images/ukulele-slide-3.jpg" style="width:100%">
+				  <img class="mySlides" src="images/ukulele-slide-4.jpg" style="width:100%">
 
 				  <a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
 				  <a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
@@ -158,7 +199,22 @@
 				}
 				</script>
 		</div>
-	</section>
+	</section>-->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<p>Test</p>
+				</div>
+				<div class="col-sm-4">
+					<p>Test</p>
+				</div>
+				<div class="col-sm-4">
+					<p>Test</p>
+				</div>
+	</footer>
+	
 
 
 	

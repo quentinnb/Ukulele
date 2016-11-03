@@ -130,7 +130,7 @@ a {
 
 /*1er slide*/
 #section1 {
-	background: url("/Users/Quentin/GitHub/Ukulele/images/musicien-ukulele.png") no-repeat center ;
+	background: url("images/musicien-ukulele.png") no-repeat center ;
 	background-size: cover;
 	padding:15% 0 15% 0;
 	width:100%;
@@ -166,6 +166,7 @@ h1 {
 	padding-bottom: 50px;
 	padding-right: 150px;
 	border: 1px solid #78643A;
+	margin:auto;
 }
 
 
@@ -189,6 +190,10 @@ h1 {
   	background-color: #EDDEA7;
   	border: 1px solid #78643A;
   	padding-bottom: 10px;
+  }
+
+  footer {
+  	background-color:#928F7C;
   }
 
 
