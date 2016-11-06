@@ -216,8 +216,11 @@ h1 {
 
  }
 
+/*Liens*/
 
-
+.liens:hover {
+	color:#439AA1;
+}
 
 /*Formulaire de contact
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
